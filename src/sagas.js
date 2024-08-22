@@ -15,7 +15,7 @@ function displaySagas(sagas) {
     sagas.forEach(saga => {
         const sagaElement = document.createElement('div');
         sagaElement.innerHTML = `
-            <h2>${saga.saga_number}. ${saga.title}</h2>
+            <h2>${saga.title}</h2>
         `;
         sagasContainer.appendChild(sagaElement);
     });
