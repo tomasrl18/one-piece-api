@@ -14,8 +14,8 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-items: center;
-    margin: 40px auto;
-    max-width: 900px;
+    margin: 50px auto;
+    max-width: 60%;
 }
   
 .wave {
@@ -96,9 +96,10 @@
     transition: all 0.3s ease;
     letter-spacing: 2px;
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
+    margin-top: 20px;
 }
-  
+
 .one-piece-btn:hover {
     background-color: var(--dorado-claro);
     color: var(--bandera-pirata);
