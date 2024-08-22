@@ -1,3 +1,5 @@
+const list = document.getElementById('sagas-list');
+
 async function getSagas() {
     try {
         const response = await fetch('https://api.api-onepiece.com/v2/sagas/en');
@@ -10,14 +12,12 @@ async function getSagas() {
 }
 
 function displaySagas(sagas) {
-    const sagasContainer = document.getElementById('sagas');
-    
     sagas.forEach(saga => {
-        const sagaElement = document.createElement('div');
-        sagaElement.innerHTML = `
+        const li = document.createElement('li');
+        li.innerHTML = `
             <h2>${saga.title}</h2>
         `;
-        sagasContainer.appendChild(sagaElement);
+        list.appendChild(li); 
     });
 }
 
