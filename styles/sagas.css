@@ -1,0 +1,34 @@
+.one-piece-list-container {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 4px solid #8B4513; 
+    border-radius: 15px;
+    background-color: #1E90FF;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+  
+.one-piece-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Pirata One', cursive;
+    font-size: 24px;
+    color: #FFD700;
+}
+  
+.one-piece-list li {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #8B4513;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+    transition: transform 0.3s, background-color 0.3s;
+}
+  
+.one-piece-list li:hover {
+    background-color: #B22222;
+    transform: scale(1.05);
+    cursor: pointer;
+}

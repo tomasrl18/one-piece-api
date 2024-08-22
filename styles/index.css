@@ -1,15 +1,43 @@
 :root {
+    --dorado: #FFD700;
+    --dorado-claro: #F0E68C;
+    --negro: #000;
     --blanco: #FFFFFF;
+    --madera: #8B4513;
+    --bandera-pirata: #B22222;
     --pirata-fuente: 'Pirata One';
     --mar: #1E90FF;
     --cielo-azul: #87CEEB;
 }
 
 body {
-    background: linear-gradient(90deg, var(--cielo-azul), var(--mar)); /* Gradiente de cielo azul */
+    background: linear-gradient(90deg, var(--cielo-azul), var(--mar));
     position: relative;
-    font-family: var(--pirata-fuente), cursive; /* Fuente pirata */
+    font-family: var(--pirata-fuente), cursive;
     margin: 0;
     padding: 0;
-    color: var(--blanco); /* Color del texto por defecto */
+    color: var(--blanco);
+}
+
+.one-piece-title {
+    text-transform: uppercase;
+    font-family: var(--pirata-fuente), cursive;
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--dorado);
+    text-shadow: 4px 4px var(--madera), 6px 6px var(--negro);
+    letter-spacing: 8px;
+    border: 5px solid var(--madera);
+    padding: 20px;
+    background-color: var(--negro);
+    border-radius: 15px;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.one-piece-title span {
+    color: #B22222;
+    font-size: 56px;
+    text-shadow: 4px 4px var(--dorado);
 }

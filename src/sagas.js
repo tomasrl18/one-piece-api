@@ -14,7 +14,6 @@ function displaySagas(sagas) {
     
     sagas.forEach(saga => {
         const sagaElement = document.createElement('div');
-        sagaElement.classList.add('saga');
         sagaElement.innerHTML = `
             <h2>${saga.saga_number}. ${saga.title}</h2>
         `;
