@@ -7,6 +7,17 @@
     <link rel="stylesheet" type="text/css" href="./styles.css"></link>
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
     <script type="module">
+        let previousTitle = document.title;
+
+        window.addEventListener('blur', () => {
+            previousTitle = document.title
+            document.title = 'GOMU GOMU NO'
+        });
+
+        window.addEventListener('focus', () => {
+            document.title = previousTitle
+        });
+        
         document.getElementById('sagas-btn').addEventListener('click', function() {
             window.location.href = 'sagas.html';
         });
