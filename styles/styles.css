@@ -11,11 +11,11 @@
 
 .button-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
-    gap: 20px; /* Espacio entre los botones */
-    justify-items: center; /* Centra los botones en su columna */
-    margin: 40px auto; /* Centra todo el contenedor */
-    max-width: 900px; /* Limita el ancho total del contenedor */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: 40px auto;
+    max-width: 900px;
 }
   
 .wave {
@@ -24,7 +24,7 @@
     left: 0;
     width: 100%;
     height: 150px;
-    background: var(--mar); /* Color del mar */
+    background: var(--mar);
     border-top-left-radius: 50% 20%;
     border-top-right-radius: 50% 20%;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
@@ -83,54 +83,53 @@
 }
 
 .one-piece-btn {
-    background-color: var(--dorado); /* Color dorado, como el tesoro */
-    color: var(--negro); /* Color negro para el texto */
-    font-family: var(--pirata-fuente), cursive; /* Fuente con estilo pirata */
-    font-size: 28px; /* Tamaño de fuente más grande */
+    background-color: var(--dorado);
+    color: var(--negro);
+    font-family: var(--pirata-fuente), cursive;
+    font-size: 28px;
     font-weight: bold;
-    padding: 20px 40px; /* Tamaño del botón aumentado */
-    border: 4px solid var(--madera); /* Borde más grueso */
+    padding: 20px 40px;
+    border: 4px solid var(--madera);
     border-radius: 10px;
-    /* text-shadow: 3px 3px #8B4513; */ /* Sombra más notable */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     transition: all 0.3s ease;
-    letter-spacing: 2px; /* Separación entre letras */
+    letter-spacing: 2px;
     width: 100%;
     max-width: 250px;
 }
   
 .one-piece-btn:hover {
-    background-color: var(--dorado-claro); /* Un color más claro al hacer hover */
-    color: var(--bandera-pirata); /* Color rojo oscuro, como la bandera pirata */
+    background-color: var(--dorado-claro);
+    color: var(--bandera-pirata);
     box-shadow: 0 8px 14px rgba(0, 0, 0, 0.6);
-    transform: translateY(-2px); /* Efecto de elevación */
+    transform: translateY(-2px)
 }
   
 .one-piece-btn:active {
-    transform: translateY(0); /* Vuelve a la posición original al hacer clic */
+    transform: translateY(0);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
 }
 
 .one-piece-title {
     text-transform: uppercase;
-    font-family: var(--pirata-fuente), cursive; /* Fuente con estilo pirata */
-    font-size: 48px; /* Tamaño grande para el título */
+    font-family: var(--pirata-fuente), cursive;
+    font-size: 48px;
     font-weight: bold;
-    color: var(--dorado); /* Color dorado */
-    text-shadow: 4px 4px var(--madera), 6px 6px var(--negro); /* Sombra doble para un efecto más dramático */
-    letter-spacing: 8px; /* Espaciado entre letras */
-    border: 5px solid var(--madera); /* Borde marrón como el de un pergamino */
+    color: var(--dorado);
+    text-shadow: 4px 4px var(--madera), 6px 6px var(--negro);
+    letter-spacing: 8px;
+    border: 5px solid var(--madera);
     padding: 20px;
-    background-color: var(--negro); /* Fondo negro para resaltar el texto */
+    background-color: var(--negro);
     border-radius: 15px;
     text-align: center;
     max-width: 800px;
-    margin: 20px auto; /* Centrar el título en la página */
+    margin: 20px auto;
 }
 
 .one-piece-title span {
-    color: #B22222; /* Color rojo oscuro para resaltar la palabra "ONE PIECE" */
-    font-size: 56px; /* Tamaño más grande para la palabra destacada */
-    text-shadow: 4px 4px var(--dorado); /* Sombra dorada para "ONE PIECE" */
+    color: #B22222;
+    font-size: 56px;
+    text-shadow: 4px 4px var(--dorado);
 }
