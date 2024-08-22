@@ -3,42 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONE PIEC API</title>
-
+    <title>ONE PIECE API</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
     <script type="module">
-        const $ = el => document.querySelector(el)
-        const $$ = el => document.querySelectorAll(el)
-        
-        async function getSagas() {
-            try {
-                const response = await fetch('https://api.api-onepiece.com/v2/sagas/en');
-                const sagas = await response.json();
-                
-                displaySagas(sagas);
-            } catch (error) {
-                console.error('Error fetching the sagas:', error);
-            }
-        }
-
-        function displaySagas(sagas) {
-            const sagasContainer = document.getElementById('sagas');
-            
-            sagas.forEach(saga => {
-                const sagaElement = document.createElement('div');
-                sagaElement.classList.add('saga');
-                sagaElement.innerHTML = `
-                    <h2>${saga.title}</h2>
-                    <p>${saga.saga_number}</p>
-                `;
-                sagasContainer.appendChild(sagaElement);
-            });
-        }
-
-        getSagas();
+        document.getElementById('sagas-btn').addEventListener('click', function() {
+            window.location.href = 'sagas.html';
+        });
     </script>
 </head>
 <body>
-    <h1>This is a ONE PIECe API Project</h1>
-    <div id="sagas"></div>
+    <div style="text-align: center;">
+        <h1 class="one-piece-title">This is a <span>ONE PIECE</span> API Project</h1>
+        <button id="sagas-btn" type="button" class="one-piece-btn">SAGAS</button>
+    </div>
 </body>
 </html>

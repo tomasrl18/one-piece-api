@@ -1,0 +1,59 @@
+:root {
+    --dorado: #FFD700;
+    --negro: #000;
+    --madera: #8B4513;
+    --bandera-pirata: #B22222;
+    --pirata-fuente: 'Pirata One';
+}
+
+.one-piece-btn {
+    background-color: var(--dorado); /* Color dorado, como el tesoro */
+    color: var(--negro); /* Color negro para el texto */
+    font-family: var(--pirata-fuente), cursive; /* Fuente con estilo pirata */
+    font-size: 28px; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    padding: 20px 40px; /* Tamaño del botón aumentado */
+    border: 4px solid var(--madera); /* Borde más grueso */
+    border-radius: 10px;
+    /* text-shadow: 3px 3px #8B4513; */ /* Sombra más notable */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 2px; /* Separación entre letras */
+}
+  
+.one-piece-btn:hover {
+    background-color: #F0E68C; /* Un color más claro al hacer hover */
+    color: var(--bandera-pirata); /* Color rojo oscuro, como la bandera pirata */
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.6);
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+  
+.one-piece-btn:active {
+    transform: translateY(0); /* Vuelve a la posición original al hacer clic */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.one-piece-title {
+    text-transform: uppercase;
+    font-family: var(--pirata-fuente), cursive; /* Fuente con estilo pirata */
+    font-size: 48px; /* Tamaño grande para el título */
+    font-weight: bold;
+    color: var(--dorado); /* Color dorado */
+    text-shadow: 4px 4px var(--madera), 6px 6px var(--negro); /* Sombra doble para un efecto más dramático */
+    letter-spacing: 8px; /* Espaciado entre letras */
+    border: 5px solid var(--madera); /* Borde marrón como el de un pergamino */
+    padding: 20px;
+    background-color: var(--negro); /* Fondo negro para resaltar el texto */
+    border-radius: 15px;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto; /* Centrar el título en la página */
+}
+
+.one-piece-title span {
+    color: #B22222; /* Color rojo oscuro para resaltar la palabra "ONE PIECE" */
+    font-size: 56px; /* Tamaño más grande para la palabra destacada */
+    text-shadow: 4px 4px var(--dorado); /* Sombra dorada para "ONE PIECE" */
+}
+  
