@@ -8,15 +8,6 @@
     --pirata-fuente: 'Pirata One';
     --mar: #1E90FF;
 }
-
-body {
-    background: linear-gradient(90deg, #87CEEB, #1E90FF); /* Gradiente de cielo azul */
-    position: relative;
-    font-family: var(--pirata-fuente), cursive; /* Fuente pirata */
-    margin: 0;
-    padding: 0;
-    color: var(--blanco); /* Color del texto por defecto */
-}
   
 .wave {
     position: absolute;

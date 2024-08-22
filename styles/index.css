@@ -1,0 +1,15 @@
+:root {
+    --blanco: #FFFFFF;
+    --pirata-fuente: 'Pirata One';
+    --mar: #1E90FF;
+    --cielo-azul: #87CEEB;
+}
+
+body {
+    background: linear-gradient(90deg, var(--cielo-azul), var(--mar)); /* Gradiente de cielo azul */
+    position: relative;
+    font-family: var(--pirata-fuente), cursive; /* Fuente pirata */
+    margin: 0;
+    padding: 0;
+    color: var(--blanco); /* Color del texto por defecto */
+}
