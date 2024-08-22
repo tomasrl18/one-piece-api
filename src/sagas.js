@@ -21,4 +21,8 @@ function displaySagas(sagas) {
     });
 }
 
+document.getElementById('back-btn').addEventListener('click', () => {
+    window.location.href = 'index.html'; // Redirige a la página principal
+});
+
 getSagas();
