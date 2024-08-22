@@ -8,6 +8,15 @@
     --pirata-fuente: 'Pirata One';
     --mar: #1E90FF;
 }
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los botones */
+    justify-items: center; /* Centra los botones en su columna */
+    margin: 40px auto; /* Centra todo el contenedor */
+    max-width: 900px; /* Limita el ancho total del contenedor */
+}
   
 .wave {
     position: absolute;
@@ -72,6 +81,8 @@
     cursor: pointer;
     transition: all 0.3s ease;
     letter-spacing: 2px; /* Separación entre letras */
+    width: 100%;
+    max-width: 250px;
 }
   
 .one-piece-btn:hover {
@@ -108,4 +119,3 @@
     font-size: 56px; /* Tamaño más grande para la palabra destacada */
     text-shadow: 4px 4px var(--dorado); /* Sombra dorada para "ONE PIECE" */
 }
-  
