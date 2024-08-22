@@ -10,7 +10,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #87CEEB 60%, #1E90FF); /* Gradiente de cielo azul */
+    background: linear-gradient(90deg, #87CEEB, #1E90FF); /* Gradiente de cielo azul */
     position: relative;
     font-family: var(--pirata-fuente), cursive; /* Fuente pirata */
     margin: 0;
