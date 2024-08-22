@@ -8,3 +8,7 @@ window.addEventListener('blur', () => {
 window.addEventListener('focus', () => {
     document.title = previousTitle
 });
+
+document.getElementById('sagas-btn').addEventListener('click', function() {
+    window.location.href = 'sagas.html';
+});
